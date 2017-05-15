@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "scanflib.h"
 
+//Robert Bonacker hat hier was geaendert
 #define ITEM_HILFE  0
 #define ITEM_KOM1   1
 #define ITEM_KOM2   2
