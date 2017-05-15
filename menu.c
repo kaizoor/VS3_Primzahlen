@@ -7,7 +7,7 @@
 #define ITEM_KOM2   2
 #define ITEM_KOM3   3
 #define ITEM_ENDE   4
-//Kommentar Robert Bonacker
+//Kommentar2 Robert Bonacker
 
 
 char * komMenu[]={"\n 0\tHilfetext\n",
