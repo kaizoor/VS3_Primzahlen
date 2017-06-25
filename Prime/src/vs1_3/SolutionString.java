@@ -1,6 +1,8 @@
 package vs1_3;
 
-
+/**
+ * @author Der den Wolf macht
+ */
 public class SolutionString {
 
     private static String add(int anzahl, int prim) {
