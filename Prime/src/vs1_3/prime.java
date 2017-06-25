@@ -15,7 +15,7 @@ public class prime {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        boolean abbruch = false;
+        boolean abbruch;
 
         for (int i = 2; i < 400000; i++) {
             if (i % 2 != 0) {                  //Wenn Zahl ungerade, weitermachen

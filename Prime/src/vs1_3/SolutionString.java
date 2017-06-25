@@ -4,8 +4,7 @@ package vs1_3;
 public class SolutionString {
 
     private static String add(int anzahl, int prim) {
-        String str = anzahl + ". Primzahl: " + prim;
-        return str;
+        return anzahl + ". Primzahl: " + prim;
     }
 
     public static void main(String[] args) {
