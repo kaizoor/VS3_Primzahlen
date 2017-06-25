@@ -7,12 +7,12 @@ import javax.jws.soap.SOAPBinding;
 
 @WebService
 @SOAPBinding(style = SOAPBinding.Style.RPC)
-public class primeClient{
+public class primeService {
 
     /**
      * @param args the command line arguments
      */
-    /** public static void main(String[] args) {
+    public void Primzahl() {
         // TODO code application logic here
         boolean abbruch;
         int primeCount = 0;
@@ -33,10 +33,5 @@ public class primeClient{
                 }
             }
         }
-    } **/
-
-    public String Hallo(String name)
-    {
-        return "Hello " + name;
     }
 }

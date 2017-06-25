@@ -20,6 +20,7 @@ public class solutionString {
         int prim[] = {2, 3, 5, 7, 11};
         for (int i = 0; i <= anzahl; i++) {
             System.out.println(add(i + 1, prim[i]));
+
         }
     }
 }
