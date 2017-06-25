@@ -19,10 +19,11 @@ public interface PrimeService {
 
 
     /**
-     * 
+     *
+     * @param n
      */
     @WebMethod(operationName = "Primzahl")
     @Action(input = "http://wsserver/primeService/PrimzahlRequest", output = "http://wsserver/primeService/PrimzahlResponse")
-    public String primzahl();
+    public String primzahl(int n);
 
 }
