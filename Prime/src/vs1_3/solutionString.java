@@ -12,7 +12,7 @@ public class solutionString {
      * @param prim Primzahl
      * return  String
      */
-    private static String add(int i, int prim) {
+    static String add(int i, int prim) {
         return i + ". Primzahl: " + prim;
     }
 

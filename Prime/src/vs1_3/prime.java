@@ -16,6 +16,7 @@ public class prime {
     public static void main(String[] args) {
         // TODO code application logic here
         boolean abbruch;
+        int primeCount = 0;
 
         for (int i = 2; i < 400000; i++) {
             if (i % 2 != 0) {                  //Wenn Zahl ungerade, weitermachen
@@ -28,7 +29,8 @@ public class prime {
                     }
                 }
                 if (!abbruch) {            //Kein Teiler gefunden, also ist Zahl i eine Primzahl
-                    System.out.println(i);
+                System.out.println(solutionString.add(++primeCount,i));
+//                    System.out.println(i);
                 }
             }
         }
