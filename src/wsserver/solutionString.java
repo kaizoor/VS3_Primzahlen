@@ -9,7 +9,6 @@ public class solutionString {
      * return  String
      */
     static String add(int i, int prim, String str) {
-        i=51-i;
         return str + i + ". Primzahl: " + prim + "\n";
     }
 

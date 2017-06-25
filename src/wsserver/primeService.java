@@ -12,17 +12,17 @@ public class primeService {
     /**
      * @param args the command line arguments
      */
-    public String Primzahl(int primeCount) {
+    public String Primzahl(int target) {
         // TODO code application logic here
         boolean abbruch;
         String str="";
-
-        for(int i=2;primeCount>0;i++)
+        int primeCount=0;
+        for(int i=2;target>primeCount;i++)
         {
             if(!new String(new char[i]).matches("(..+?)\\1+"))
             {
+                primeCount++;
                 str=solutionString.add(primeCount,i,str);
-                primeCount--;
             }
         }
         return str;
