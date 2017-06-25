@@ -12,10 +12,9 @@ public class primeService {
     /**
      * @param args the command line arguments
      */
-    public String Primzahl() {
+    public String Primzahl(int primeCount) {
         // TODO code application logic here
         boolean abbruch;
-        int primeCount = 50;
         String str="";
 
         for(int i=2;primeCount>0;i++)
