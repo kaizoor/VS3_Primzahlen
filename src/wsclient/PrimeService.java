@@ -23,6 +23,6 @@ public interface PrimeService {
      */
     @WebMethod(operationName = "Primzahl")
     @Action(input = "http://wsserver/primeService/PrimzahlRequest", output = "http://wsserver/primeService/PrimzahlResponse")
-    public void primzahl();
+    public String primzahl();
 
 }

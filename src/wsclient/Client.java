@@ -9,6 +9,6 @@ public class Client {
     {
         PrimeServiceService service = new PrimeServiceService();
         PrimeService primeService = service.getPrimeServicePort();
-        primeService.primzahl();
+        System.out.println(primeService.primzahl());
     }
 }
