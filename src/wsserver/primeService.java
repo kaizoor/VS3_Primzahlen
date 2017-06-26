@@ -10,7 +10,7 @@ import javax.jws.soap.SOAPBinding;
 public class primeService {
 
     /**
-     * @param args the command line arguments
+     * @param target the number of prime Numbers
      */
     public String Primzahl(int target) {
         boolean abbruch;
