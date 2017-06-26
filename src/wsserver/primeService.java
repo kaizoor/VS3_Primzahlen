@@ -11,10 +11,9 @@ public class primeService {
 
     public int[] Primzahl(int target) {
 
-        String str="";
         int primeCount=0;
         int[] primes = new int[target];
-        for(int i=2;target>primeCount;i++)
+        /*for(int i=2;target>primeCount;i++)
         {
             if(!new String(new char[i]).matches("(..+?)\\1+"))
             /*
@@ -27,38 +26,26 @@ public class primeService {
             * Dann Vielfache von 3 usw...
             * Ein Abbruch bei sqrt(n) oder n/2 ist mit der regex nicht möglich, daher bel&auml;uft sich die Laufzeit ca. auf O(n^2)
             * Die Suche nach den ersten 4000 Primzahlen hat auf meinem Gerätt ca. 290 Sekunden in Anspruch genommen.
-            */
+            *
             {
                 primes[primeCount]=i;
                 primeCount++;
             }
-        }
+        }*/
 
-        /*
-        int num=2;
-        while(primeCount!=target)// while primeCount!= number of desired prime numbers entered keep searching..
+        for(int i=2;primeCount<target;i++)
         {
-            boolean prime=true;// to determine whether the number is prime or not
-            for (int i=2;i*i<=num;i++)//efficiency matters
-            {
-                if (num%i==0)
-                {
-                    prime=false;// if number divides any other number its not a prime so set prime to false and break the loop.
-                    break;
-                }
-
-        }
-            if (prime)
+            // if current value of i is a prime then increment primeCount and store the value of the prime number.
+            if(isPrime.isIt(i))
             {
                 primes[primeCount]=i;
                 primeCount++;
-
             }
-            num++; //see if next number is prime or not.
-        }
-         */
 
+        }
 
         return primes;
     }
+
+
 }
