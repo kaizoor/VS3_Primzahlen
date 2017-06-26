@@ -2,11 +2,9 @@ package wsserver;
 
 public class isPrime {
     /*
-     * add Methode zum erzeugen der Ausgabe
+     * add Methode zum Prüfen auf Prim
      *
-     * @param i Position der Primzahl
-     * @param prim Primzahl
-     * return  String
+     * @param ipNum zum Testen
      */
     static boolean isIt(int ipNum)
     {
@@ -26,7 +24,5 @@ public class isPrime {
         }
         return flag;
     }
-    /**
-     * Main zum aufrufen der Funktion
-     */
+
 }
