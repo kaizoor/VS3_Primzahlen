@@ -21,9 +21,15 @@ public class Client {
             }
             n = scanner.nextInt();
         } while (n <= 0);
-
+        int[] primes = new int[n];
+        int i=1;
         PrimeServiceService service = new PrimeServiceService();
         PrimeService primeService = service.getPrimeServicePort();
-        System.out.println(primeService.primzahl(n));
+        primes=primeService.primzahl(n);
+        for (int p: primes
+             ) {
+            System.out.println(i + ". Primzahl: " + p);
+            i++;
+        }
     }
 }
