@@ -13,16 +13,24 @@ public class primeService {
      * @param args the command line arguments
      */
     public String Primzahl(int target) {
-        // TODO code application logic here
         boolean abbruch;
-        String str="";
-        int primeCount=0;
-        for(int i=2;target>primeCount;i++)
-        {
-            if(!new String(new char[i]).matches("(..+?)\\1+"))
-            {
-                primeCount++;
-                str=solutionString.add(primeCount,i,str);
+        String str = "";
+        int primeCount = 0;
+
+        for (int i = 2; i < 400000; i++) {
+            if (i % 2 != 0) {                  //Wenn Zahl ungerade, weitermachen
+                abbruch = false;
+                for (int j = 3; j < i / 2; j += 2) //Zahl i mod alle Ã¼brigen Teiler (grÃ¶ÃŸer als i/2 reicht), i+=2, damit nur noch ungerade Zahlen ueberprueft werden
+                {
+                    if (i % j == 0) {          //Wenn i%j mindestens ein Mal == 0, ist Zahl i keine Primzahl
+                        abbruch = true;
+                        break;
+                    }
+                }
+                if (!abbruch) {            //Kein Teiler gefunden, also ist Zahl i eine Primzahl
+                    str = solutionString.add(++primeCount, i, str);
+                }
+
             }
         }
         return str;
